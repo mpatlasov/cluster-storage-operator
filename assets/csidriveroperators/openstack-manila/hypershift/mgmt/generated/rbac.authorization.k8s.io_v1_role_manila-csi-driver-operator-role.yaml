@@ -36,6 +36,18 @@ rules:
   - patch
   - delete
 - apiGroups:
+  - networking.k8s.io
+  resources:
+  - networkpolicies
+  verbs:
+  - watch
+  - list
+  - get
+  - create
+  - delete
+  - patch
+  - update
+- apiGroups:
   - hypershift.openshift.io
   resources:
   - hostedcontrolplanes
