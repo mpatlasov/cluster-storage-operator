@@ -9,6 +9,7 @@ spec:
         openshift.io/required-scc: restricted-v2
       labels:
         app: aws-ebs-csi-driver-operator
+        hypershift.openshift.io/managed-by: cluster-storage-operator
         hypershift.openshift.io/need-management-kas-access: "true"
         # Hypershift allows the API server port to be defined in
         # hostedcluster.spec.networking.apiServer.port so in this case we add the

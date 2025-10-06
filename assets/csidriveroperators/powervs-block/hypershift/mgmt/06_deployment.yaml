@@ -16,6 +16,7 @@ spec:
         target.workload.openshift.io/management: '{"effect": "PreferredDuringScheduling"}'
       labels:
         app: powervs-block-csi-driver-operator
+        hypershift.openshift.io/managed-by: cluster-storage-operator
         name: powervs-block-csi-driver-operator
         openshift.storage.network-policy.all-egress: allow
         openshift.storage.network-policy.dns: allow
